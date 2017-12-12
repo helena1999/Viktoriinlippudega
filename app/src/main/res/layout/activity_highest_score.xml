@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_highest_score"
+    tools:context="com.example.opilane.viktoriinlippudega.HighestScoreActivity">
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textScore"
+        android:text="Your Score:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#ff0000"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_above="@+id/textHighScore"
+        android:layout_alignLeft="@+id/textHighScore" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textHighScore"
+        android:gravity="center"
+        android:text="Highest Score:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#ff0000"
+        android:textStyle="bold"
+        android:textIsSelectable="true"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:background="#01d277"
+        android:text="Try again"
+        android:textSize="24dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick"/>
+
+</RelativeLayout>
